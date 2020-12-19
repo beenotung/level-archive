@@ -1,0 +1,11 @@
+node_modules
+example/db
+example/data
+pnpm-lock.yaml
+.editorconfig
+.prettierignore
+.prettierrc
+tsconfig.json
+tslint.json
+*.tgz
+.idea/

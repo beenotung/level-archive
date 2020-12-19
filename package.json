@@ -28,9 +28,6 @@
     "tsc": "tsc -p .",
     "prepublishOnly": "run-s test build"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@beenotung/level-ts": "^1.14.1",
     "@beenotung/tslib": "^16.39.2",
