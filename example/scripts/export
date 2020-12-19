@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+set -o pipefail
+npx export-level-archive db data/db.txt
