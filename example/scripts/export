@@ -1,4 +1,9 @@
 #!/bin/bash
 set -e
 set -o pipefail
+
+# export as plain text
 npx export-level-archive db data/db.txt
+
+# export as compressed binary
+npx export-level-archive db | gzip > data/db.txt.gz

@@ -14,12 +14,20 @@ npm install --global level-archive
 ## Usage
 Export from leveldb to file:
 ```bash
+# export as plain text
 export-level-archive ./db ./data/db.txt
+
+# export as compressed binary
+export-level-archive ./db | gzip > ./data/db.txt.gz
 ```
 
 Import from file to leveldb:
 ```bash
+# import from plain text
 import-level-archive ./db ./data/db.txt
+
+# import from compressed binary
+cat ./data/db.txt.gz | gzip -d | export-level-archive ./db
 ```
 
 More details see: [example](./example)

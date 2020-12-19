@@ -1,4 +1,9 @@
 #!/bin/bash
 set -e
 set -o pipefail
-npx import-level-archive db data/db.txt
+
+# import from plain text
+npx import-level-archive ./db data/db.txt
+
+# import from compressed binary
+cat data/db.txt.gz | gzip -d | npx import-level-archive ./db
