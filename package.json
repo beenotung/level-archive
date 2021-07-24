@@ -1,6 +1,6 @@
 {
   "name": "level-archive",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Cli tool to import/export leveldb into txt file for archiving and transmission",
   "keywords": [
     "leveldb",
