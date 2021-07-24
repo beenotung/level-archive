@@ -18,9 +18,9 @@
   "scripts": {
     "test": "run-s format tsc",
     "clean": "rimraf dist",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "postformat": "tslint -p . --fix",
-    "build": "run-s clean tsc",
+    "format": "run-s prettier tslint",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "tslint": "tslint -p . --fix",
     "tsc": "tsc -p .",
     "prepublishOnly": "run-s test build"
   },
