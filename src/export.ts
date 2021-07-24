@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import Level from '@beenotung/level-ts'
 import * as fs from 'fs'
 

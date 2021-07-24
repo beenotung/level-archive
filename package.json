@@ -21,7 +21,9 @@
     "format": "run-s prettier tslint",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "tslint": "tslint -p . --fix",
+    "build": "run-s clean tsc set-mode",
     "tsc": "tsc -p .",
+    "set-mode": "node scripts/set-mode.js",
     "prepublishOnly": "run-s test build"
   },
   "dependencies": {
